@@ -16,10 +16,11 @@ public class WebTest extends TestBase {
     @Test
     @DisplayName("Web Test")
     @Owner("EpicFate")
-    void selenideSearchTest() {
+    void SearchTest() {
         String searchURl = WebConfigHelper.getSearchUrl();
         String searchItem = WebConfigHelper.getSearchItem();
         String searchResult = WebConfigHelper.getSearchResult();
+        Configuration.remote = WebConfigHelper.getWebdriverRemote();
 
         open(searchURl);
         $(byName("q")).setValue(searchItem).pressEnter();

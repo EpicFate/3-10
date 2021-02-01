@@ -18,7 +18,7 @@ public class TestBase {
         Configuration.browser = WebConfigHelper.getBrowserName();
         Configuration.browserVersion = WebConfigHelper.getBrowserVersion();
         Configuration.startMaximized = true;
-        Configuration.remote = WebConfigHelper.getWebdriverRemote();
+
 
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
 
