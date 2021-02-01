@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class WebTest extends TestBase {
+public class WebTest  {
 
     @Test
     @DisplayName("Web Test")
