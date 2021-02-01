@@ -22,9 +22,10 @@ public class WebTest {
         String searchURl = WebConfigHelper.getSearchUrl();
         String searchItem = WebConfigHelper.getSearchItem();
         String searchResult = WebConfigHelper.getSearchResult();
+
         Configuration.remote = WebConfigHelper.getWebdriverRemote();
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
-        Configuration.browser = WebConfigHelper.getBrowserName();
+
         Configuration.browserVersion = WebConfigHelper.getBrowserVersion();
         Configuration.startMaximized = true;
 
