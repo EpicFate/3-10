@@ -18,8 +18,6 @@ public class WebTest {
     @BeforeAll
     static void setup() {
         Configuration.remote = WebConfigHelper.getWebdriverRemote();
-        addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
-        Configuration.browser = WebConfigHelper.getBrowserName();
         Configuration.startMaximized = true;
     }
 
