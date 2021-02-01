@@ -12,8 +12,6 @@ public class WebConfigHelper {
 
     public static String getBrowserName() { return getConfig().browserName(); }
 
-    public static String getBrowserVersion() { return getConfig().browserVersion(); }
-
     public static String getWebdriverRemote() { return getConfig().webdriverRemote(); }
 
 

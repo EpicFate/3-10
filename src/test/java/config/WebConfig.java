@@ -23,9 +23,6 @@ public interface WebConfig extends Config {
     @Key("browser.name")
     String browserName();
 
-    @Key("browser.version")
-    String browserVersion();
-
     @Key("webdriver.remote")
     String webdriverRemote();
 
